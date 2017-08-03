@@ -5,9 +5,9 @@ Docker Template for Development and Production. Javascript, Clojure and Nginx re
 ## Getting Started
 
 ```
-#git clone git@github.com:Institute1937/marsden.git
-#cd marsden
-#make build
+git clone git@github.com:Institute1937/marsden.git
+cd marsden
+make build
 ```
 
 ### Prerequisites
