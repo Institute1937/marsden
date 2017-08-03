@@ -1,4 +1,4 @@
-local:
+start:
 	docker-compose up
 
 bundle:
