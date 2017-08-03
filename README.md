@@ -12,8 +12,6 @@ Docker Template for Development and Production. Javascript, Clojure and Nginx re
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
 ```
 docker
 docker-machine
@@ -23,26 +21,24 @@ cloud server (eg digital ocean)
 
 ### Usage
 
-A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
 
 ```
-#make build
+make build
 
-browse to http://localhost
-```
-
-Installs packages and runs the starter template
 
 ```
-#make start
-```
 
-Runs without installing any packages
+Installs packages and runs the starter template - browse to http://localhost
 
 ```
-#make bundle
+make start
+```
+
+Runs without installing any packages - browse to http://localhost
+
+```
+make bundle
 ```
 packages up front end javascript into production build ready for deployment
 
@@ -61,13 +57,13 @@ docker-machine create --driver=digitalocean \
 Creates a docker-machine on CoreOS at Digital Ocean
 
 ```
-#make deploy
-browse to http://your-cloud-ip
-```
-Deploys to cloud server running docker-machine named marsden
+make deploy
 
 ```
-#make rename name=myserver
+Deploys to cloud server running docker-machine named marsden - browse to http://your-cloud-ip
+
+```
+make rename name=myserver
 ```
 
 Renames cloud server docker-machine to 'myserver'
