@@ -1,0 +1,24 @@
+{
+  "name": "yesmate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --host 0.0.0.0 --env.dev",
+    "build": "webpack --config webpack.prod.config.js  --env.prod",
+    "prod": "NODE_ENV=production node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "dependencies": {
+    "d3v4": "^4.2.2",
+    "express": "^4.15.3",
+    "path": "^0.12.7",
+    "pm2": "^2.6.1"
+  }
+}

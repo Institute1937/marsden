@@ -1,0 +1,17 @@
+version: "2"
+services:
+
+    web:
+        build: ./client
+    
+    clojure:
+        build: ./clojure
+
+    nginx:
+        # image: nginx
+        build: ./proxy
+        ports:
+            - "80:80"
+        links:
+            - web
+            - clojure

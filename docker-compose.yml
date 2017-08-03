@@ -1,0 +1,26 @@
+version: "2"
+services:
+
+    web:
+        build:
+          context: ./client
+          dockerfile: e.o
+        volumes:
+          - "./client:/src"
+          - /src/node_modules
+        working_dir: /src
+        command: 'npm run dev'
+        ports:
+          - 6800:1998
+    
+    clojure:
+        build: ./clojure
+
+    nginx:
+        # image: nginx
+        build: ./proxy
+        ports:
+            - "80:80"
+        links:
+            - web
+            - clojure
