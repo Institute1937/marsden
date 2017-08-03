@@ -9,3 +9,6 @@ build:
 
 deploy:
 	./bin/deploy.sh
+
+rename:
+	./bin/rename-docker-machine.sh $(name)
