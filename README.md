@@ -55,7 +55,7 @@ Creates a docker-machine on CoreOS at Digital Ocean
 ```
 make deploy
 ```
-Deploys to cloud server running docker-machine named marsden - browse to http://your-cloud-ip eg http://mars.io37.ml
+Deploys to cloud server running docker-machine named marsden - browse to http://your-cloud-ip eg [mars.io37.ml](http://mars.io37.ml)
 
 ```
 make rename name=myserver
