@@ -21,12 +21,8 @@ cloud server (eg digital ocean)
 
 ### Usage
 
-
-
 ```
 make build
-
-
 ```
 
 Installs packages and runs the starter template - browse to http://localhost
