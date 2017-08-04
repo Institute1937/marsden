@@ -81,3 +81,13 @@ Renames cloud server docker-machine to 'myserver'
 * [CoreOS](http://www.coreos.com) - Container Linux for hosting docker
 * [Digital Ocean](https://github.com/docker/machine) - Cloud Provider
 * [Nginx](https://www.nginx.com/solutions/) - Web Proxy
+
+## TODO
+
+* [ ] Docker Cloud
+* [ ] surge.sh
+* [ ] now.sh
+* [ ] aws
+* [ ] azure
+* [ ] hyper, triton, quay.....others?
+
