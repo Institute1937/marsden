@@ -1,8 +1,8 @@
 # marsden
 
-Docker Template for Development and Production. Javascript, Clojure and Nginx reverse proxy containers.
+Docker Template for Development and Production. Javascript, Clojure and Nginx reverse proxy containers. Goodbye Mr CORS issues
 
-## Getting Started
+## TLDR
 
 ```
 git clone git@github.com:Institute1937/marsden.git
@@ -60,13 +60,23 @@ Creates a docker-machine on CoreOS at Digital Ocean
 make deploy
 
 ```
-Deploys to cloud server running docker-machine named marsden - browse to http://your-cloud-ip
+Deploys to cloud server running docker-machine named marsden - browse to http://your-cloud-ip eg http://mars.io37.ml
 
 ```
 make rename name=myserver
 ```
 
 Renames cloud server docker-machine to 'myserver'
+
+## Explanation
+
+* Client container runs vanilla Javascript. Webpack-dev-server runs dev and express runs bundles version in production. Both run on port 5000
+* Server container runs Clojure on port 3003
+* Client app makes fetch request to Clojure API
+* Nginx reverse proxy between client and server runs on port 80
+* No CORS configuration needed, handled by nginx
+* All appropriate commands in Makefile
+* Deploys to Digital Ocean - others to follow
 
 ## Built With
 
