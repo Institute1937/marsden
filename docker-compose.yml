@@ -4,7 +4,7 @@ services:
     web:
         build:
           context: ./client
-          dockerfile: e.o
+          dockerfile: Dockerfile.dev
         volumes:
           - "./client:/src"
           - /src/node_modules
