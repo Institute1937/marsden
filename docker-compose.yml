@@ -20,7 +20,7 @@ services:
         # image: nginx
         build: ./proxy
         ports:
-            - "80:80"
+            - "3100:3100"
         links:
             - web
             - clojure
