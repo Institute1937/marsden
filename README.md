@@ -68,7 +68,8 @@ Renames cloud server docker-machine to 'myserver'
 * Client container runs vanilla Javascript. Webpack-dev-server runs dev and express runs bundles version in production. Both run on port 5000
 * Server container runs Clojure on port 3003
 * Client app makes fetch request to Clojure API
-* Nginx reverse proxy between client and server runs on port 80
+* Nginx reverse proxy between client and server runs on port 3100 (dev)
+* Nginx reverse proxy between client and server runs on port 80 (prod)
 * No CORS configuration needed, handled by nginx
 * All appropriate commands in Makefile
 * Deploys to Digital Ocean - others to follow
