@@ -1,3 +1,5 @@
+include config/mars.env
+
 start:
 	docker-compose up
 
@@ -7,8 +9,8 @@ bundle:
 build:
 	docker-compose build && docker-compose up
 
-deploy:
-	./bin/deploy.sh
+deploy-do:
+	./bin/digital-ocean/deploy.sh
 
-rename:
-	./bin/rename-docker-machine.sh $(name)
+deploy-aws:
+	./bin/aws/deploy.sh
