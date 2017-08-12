@@ -3,13 +3,16 @@ services:
 
     web:
         build: ./client
+        restart: always
     
     clojure:
         build: ./clojure
+        restart: always
 
     nginx:
         # image: nginx
         build: ./proxy
+        restart: always
         ports:
             - "80:80"
         links:
