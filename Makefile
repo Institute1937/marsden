@@ -14,3 +14,6 @@ deploy-do:
 
 deploy-aws:
 	./bin/aws/deploy.sh
+
+kem:
+	./bin/kem/deploy.sh
