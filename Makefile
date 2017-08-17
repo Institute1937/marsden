@@ -15,5 +15,5 @@ deploy-do:
 deploy-aws:
 	./bin/aws/deploy.sh
 
-kem:
-	./bin/kem/deploy.sh
+deploy-exo:
+	./bin/exo/deploy.sh
