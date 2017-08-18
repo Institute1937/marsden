@@ -1,5 +1,3 @@
-include config/mars.env
-
 start:
 	docker-compose up
 
