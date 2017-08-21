@@ -2,7 +2,7 @@
   (:use [org.httpkit.server] [clojure.data.json :only [json-str]])
   (:gen-class))
 
-(defn current-time [request]
+(defn say-hello [request]
   {:status 200
    :headers {"Content-Type" "application/json"}
    :body    (json-str {"message" "and I'm from Clojure"})})
@@ -11,4 +11,4 @@
 
 (use 'ring.adapter.jetty)
 
-(run-jetty current-time {:port 3009})
+(run-jetty say-hello {:port 3009})
