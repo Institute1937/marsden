@@ -17,14 +17,12 @@ services:
         build: ./clojure
         volumes:
           - "./clojure:/src"
-          - /src/node_modules
         working_dir: /src
         command: 'lein run'
         ports:
           - 6801:3009
 
     nginx:
-        # image: nginx
         build: ./proxy
         ports:
             - "3100:3100"
