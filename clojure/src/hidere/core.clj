@@ -7,8 +7,6 @@
    :headers {"Content-Type" "application/json"}
    :body    (json-str {"message" "and I'm from Clojure"})})
 
-
-
 (use 'ring.adapter.jetty)
 
 (run-jetty say-hello {:port 3009})
