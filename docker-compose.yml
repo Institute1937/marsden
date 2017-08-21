@@ -15,6 +15,8 @@ services:
     
     clojure:
         build: ./clojure
+        ports:
+          - 6801:3009
 
     nginx:
         # image: nginx
