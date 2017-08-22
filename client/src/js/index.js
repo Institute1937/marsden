@@ -3,7 +3,7 @@ document.body.onload = addElement;
 function addElement () { 
   let currentDiv = document.getElementById("front"); 
   var newDiv = document.createElement("div"); 
-  var newContent = document.createTextNode("I am from js"); 
+  var newContent = document.createTextNode("I am from JS"); 
   newDiv.appendChild(newContent); //add the text node to the newly created div. 
   currentDiv.appendChild(newDiv)
 
