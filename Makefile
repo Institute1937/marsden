@@ -7,7 +7,7 @@ bundle:
 	cd client && npm run build
 
 build:
-	docker-compose up --build
+	docker-compose build && docker-compose up 
 
 deploy-do:
 	./bin/digital_ocean/deploy.sh
