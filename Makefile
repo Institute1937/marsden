@@ -1,5 +1,7 @@
 start:
 	docker-compose up
+iku:
+	./bin/iku/run.sh
 
 bundle:
 	cd client && npm run build

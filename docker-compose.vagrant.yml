@@ -1,0 +1,19 @@
+version: "2"
+services:
+
+    web:
+        build: ./client
+        restart: always
+    
+    clojure:
+        build: ./clojure
+        restart: always
+
+    nginx:
+        build: ./proxy
+        restart: always
+        ports:
+            - "2600:2600"
+        links:
+            - web
+            - clojure
