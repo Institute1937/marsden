@@ -1,0 +1,3 @@
+language: clojure
+before_install: cd clojure
+script: lein run
