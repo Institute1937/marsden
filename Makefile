@@ -1,7 +1,7 @@
 start:
 	docker-compose up
 york:
-	./bin/york/run.sh
+	./bin/york/deploy.sh
 
 bundle:
 	cd client && npm run build
